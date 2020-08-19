@@ -1,8 +1,10 @@
-all: README.md title.sh date.sh number.sh 
+
+all: README.md  date.sh number.sh
+
 README.md:
+	
 	touch README.md
-title.sh:
-	echo #title > README.md
+	echo "# title" > README.md
 date.sh: date.sh
 	 date >> README.md
 number.sh:
